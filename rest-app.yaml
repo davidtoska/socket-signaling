@@ -1,0 +1,12 @@
+runtime: nodejs
+env: flex
+service: socketsignaling
+manual_scaling:
+  instances: 1
+
+network:
+  session_affinity: true
+
+env_variables:
+  SECRET: "davids_big_secret"
+
